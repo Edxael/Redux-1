@@ -1,5 +1,4 @@
 # Information
 
 
-one.
-two.
+Basic example of Redux functionality..
