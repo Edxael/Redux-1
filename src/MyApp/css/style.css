@@ -11,12 +11,7 @@ body{
     box-shadow: 5px 5px 5px #888888;
     border-radius: 10px; 
 }
- 
-.menu1{
-    display: flex;
-    justify-content: center;
-}
- 
+
 .menuButton{
     margin: 2px;
     padding: 3px 6px;
@@ -28,4 +23,21 @@ body{
  
 .menuButton:hover{
     background-color: rgba(170, 252, 180, 0.823);
+}
+
+/* ================================================== */
+ 
+.menu1{
+    display: flex;
+    justify-content: center;
+}
+ 
+
+.buttonsContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.reduxActionButton{
+    margin: 5px;
 }

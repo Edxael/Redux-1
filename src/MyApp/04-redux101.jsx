@@ -1,7 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { addOneToCount, minusOneToCount, resetValue } from './reduxFiles/02-Actions'
+// import { addOneToCount, minusOneToCount, resetValue } from './reduxFiles/02-Actions'
 import { store } from './reduxFiles/01-Store'
+import ButtonP from './components/01-button-plus'
+import ButtonM from './components/02-button-minus'
+import ButtonR from './components/03-button-reset'
 
 
 class Redux101 extends React.Component{
@@ -12,12 +15,16 @@ class Redux101 extends React.Component{
 
         return(
             <div>
-                <h1>Redux 101</h1>
+                <h1>Redux Counter ll</h1>
                 <h3>The value is: { value1.count }</h3>
-
-                <button onClick={ () => { addOneToCount() } } >Plus 1</button>
-                <button onClick={ () => { minusOneToCount() } } >Less 1</button>
-                <button onClick={ () => { resetValue() } } >Reset</button>
+                <hr/>
+                
+                <div className="buttonsContainer" >
+                    <ButtonP />
+                    <ButtonM />
+                    <ButtonR />
+                </div>
+                
             </div>
         )
     }
@@ -40,7 +47,9 @@ export default connect(mapStateToProps)(Redux101)
 
 
 
-
+// <button onClick={ () => { addOneToCount() } } >Plus 1</button>
+// <button onClick={ () => { minusOneToCount() } } >Less 1</button>
+// <button onClick={ () => { resetValue() } } >Reset</button>
 
 
 
