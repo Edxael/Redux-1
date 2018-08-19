@@ -10,5 +10,3 @@ export const reducer =  ( state = { count: 0 }, action ) => {
         default: return state;
     }
 } 
-
-// export default reducer

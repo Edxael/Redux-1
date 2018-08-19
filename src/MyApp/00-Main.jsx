@@ -32,10 +32,8 @@ export default class extends React.Component{
                         <hr/>
     
                         <Switch>
-                            <Route exact path="/" component={Home}/>
+                            <Route exact path="/" component={Redux101}/>
                             <Route path="/2" component={Page2}/>
-                            <Route path="/3" component={Page3}/>
-                            <Route path="/4" component={Redux101}/>
                             <Route component={Page99}/>
                         </Switch>
     

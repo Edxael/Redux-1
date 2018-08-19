@@ -1,16 +1,18 @@
 import React from 'react'
 import { connect } from 'react-redux'
+
 import { store } from './reduxFiles/01-Store'
+
 import ButtonP from './components/01-button-plus'
 import ButtonM from './components/02-button-minus'
 import ButtonR from './components/03-button-reset'
 
 
-class Redux101 extends React.Component{
+class MainComp extends React.Component{
     render(){
         
         let value1 = store.getState()
-        console.log( "The state: ", value1.count )
+        console.log( "The state: ", value1 )
 
         return(
             <div>
@@ -19,9 +21,11 @@ class Redux101 extends React.Component{
                 <hr/>
                 
                 <div className="buttonsContainer" >
+                    
                     <ButtonP />
                     <ButtonM />
                     <ButtonR />
+                    
                 </div>
                 
             </div>
@@ -36,7 +40,7 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps)(Redux101)
+export default connect(mapStateToProps)(MainComp)
 
 
 // More information on connect()
